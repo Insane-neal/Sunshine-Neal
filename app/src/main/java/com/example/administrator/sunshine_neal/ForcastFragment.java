@@ -107,7 +107,7 @@ public class ForcastFragment extends Fragment {
                         .appendQueryParameter(FORMAT_PARAM, format)
                         .appendQueryParameter(UNITS_PARAM, units)
                         .appendQueryParameter(DAYS_PARAM, Integer.toString(numDays))
-                        .appendQueryParameter(APPID_PARAM, "654fc8a3c3110f2efba34241f63f14fe")
+                        .appendQueryParameter(APPID_PARAM, BuildConfig.OPEN_WEATHER_MAP_API_KEY)
                         .build();
                 URL url = new URL(builtUri.toString());
                 // Create the request to OpenWeatherMap, and open the connection
